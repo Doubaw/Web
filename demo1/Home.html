@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Bootstrap</title>
+</head>
+<body>
+<header class="image" data-target="#navbar-spy" data-spy="scroll">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-spy">
+	<div class ="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+        </button>
+    	<a href = "#" class="navbar-brand">黃子維</a>
+    </div>
+    <div class= "collapse navbar-collapse" id="myNavbar" >
+	<ul class = "nav navbar-nav">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="./Series.html">Series</a></li>
+		<li><a href="./DataFrame.html">DataFrame</a></li>
+		<li><a href="./Selection.html">Selection</a></li>
+		<li><a href="./Grouping.html">Grouping</a></li>
+	</ul>
+	</div>
+</nav>
+
+	<div class="container">
+		<h1>資料分析&機器學習</h1>
+	</div>
+</header>
+<body>
+<div class="container aside col-md-2">
+	<ul class="nav nav-pills nav-stacked">
+		<li class="active"><a href="#">Home</a></li>
+		<li><a href="./Series.html">Series</a></li>
+		<li><a href="./DataFrame.html">DataFrame</a></li>
+		<li><a href="./Selection.html">Selection</a></li>
+		<li><a href="./Grouping.html">Grouping</a></li>
+	</ul>
+</div>
+<div class="col-md-8">
+	<h1>[資料分析&機器學習] 第2.3講：Pandas 基本function介紹(Series, DataFrame, Selection, Grouping)</h1>
+	<p>今天要介紹的是Pandas的基本教學，在2.1講之中我們利用sklearn匯入iris的資料並利用一些簡單的處理，將dictionary的格式轉成pandas，並利用head(3)的方式顯示出資料前3幾筆，以避免顯示資料量過大畫面顯得凌亂。
+	先介紹一下Pandas是什麼，簡單來說就是把Excel的表格觀念丟到Python，你在Excel所有的操作都可以透過Pandas的函式做簡單的處理，想是欄位的加總、分群、樞紐分析表、小計、畫折線圖、圓餅圖等等…
+	在你學會Pandas這些處理的技巧之後，加上一點程式的概念，以後就可以利用Python取代Excel做到許多自動化script的處理（比如說你可以用pandas做完資料處理，畫完圖之後，利用python撰寫Email小程式，再搭配一些定時的排程工具（像是linux的cron job）將圖表以及csv檔每天固定時間寄給你想要的人，無形之中你每天就可以省下許多時間，提升工作效率），另外就我自己的經驗，當你學會使用Python＋Pandas之後方式比起去寫Excel的巨集方便多了。</p>
+	<img width = "600"height= "300" src="https://miro.medium.com/max/1910/1*jxVrmLsatRko4aIlx_5ceg.png">
+	<p>在介紹Pandas之前有許多書籍會提到Numpy，主要原因是因為Pandas背後的數值型態都是Numpy，Numpy的資料結構可以幫助Pandas在執行運算上更有效率以及更省記憶體。
+	舉例來說Python的內建資料結構list可以塞好幾種不同type的資料進去，如下圖所示，這個list裡面的資料有string, int, float，但對於機器來說，要提升效能或是提升記憶體省用效率最好有一致的型別會比較好。</p>
+	<img width = "500"height= "100" src="https://miro.medium.com/max/1045/1*_1COZ-C9vPpaCN9MgU9X9g.png">
+	<p>當使用numpy的array資料結構會強迫把裡面的資料都轉成同一型態</p>
+	<img id="try" width = "500"height= "100" src="https://miro.medium.com/max/1235/1*5QXSZruTuuCvvcmAwrY70w.png">
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+<footer>
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<h4>資料來源 : 
+			<a href="https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-3%E8%AC%9B-pandas-%E5%9F%BA%E6%9C%ACfunction%E4%BB%8B%E7%B4%B9-series-dataframe-selection-grouping-447a3fa90b60">資料分析&機器學習
+			</a>
+		</h4>
+	</nav>
+</footer>
+</html>
