@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Bootstrap</title>
+</head>
+
+<header class="image" data-target="#navbar-spy" data-spy="scroll">
+<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-spy">
+	<div class ="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+        </button>
+    <a href = "#" class="navbar-brand">黃子維</a>
+    </div>
+    <div class= "collapse navbar-collapse" id="myNavbar">
+	<ul class = "nav navbar-nav">
+		<li><a href="./Home.html">Home</a></li>
+		<li><a href="./Series.html">Series</a></li>
+		<li><a href="./DataFrame.html">DataFrame</a></li>
+		<li class="active"><a href="#">Selection</a></li>
+		<li><a href="./Grouping.html">Grouping</a></li>
+	</ul>
+</nav>
+	<div class="container">
+		<h1>資料分析&機器學習</h1>
+	</div>
+</header>
+<body>
+	<div class="container aside col-md-2">
+	<ul class="nav nav-pills nav-stacked">
+		<li><a href="./Home.html">Home</a></li>
+		<li><a href="./Series.html">Series</a></li>
+		<li><a href="./DataFrame.html">DataFrame</a></li>
+		<li class="active"><a href="#">Selection</a></li>
+		<li><a href="./Grouping.html">Grouping</a></li>
+	</ul>
+</div>
+<div class="col-md-8">
+	<h1>Selection 資料選取</h1>
+	<p>要選取某個欄位使用中括號格可[]</p>
+	<img width="600" height="200" src="https://miro.medium.com/max/1550/1*ismD269AMi37Kf5anA-ldA.png">
+	<p>多個欄位則用list裡面放欄位名稱</p>
+	<img width="600" height="200"src="https://miro.medium.com/max/1600/1*hvK_L9SPXCWUCMO-7u3QPg.png">
+	<p>如果要選第幾筆資料的某些欄位，可以使用以下兩種方法。第一種用兩次的中括號篩選，先篩選出第五筆到第十筆的資料，再篩選出欄位。第二種是用loc（location的意思）中括號裡面第一個放index的範圍，第二個放column的名稱，我個人偏好第二種寫法</p>
+	<img width="600" height="300" src="https://miro.medium.com/max/1810/1*fNDc6ZxRtwWCRoaciEPIQw.png">
+	<h1>Selection 資料篩選</h1>
+	<p>在中括號裡面方入篩選條件即可</p>
+	<img id="try" width="600" height="300" src="https://miro.medium.com/max/2008/1*7_pbzPjdSagQRsnstGwbkg.png">
+	</div> 
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+<footer>
+	<nav class="navbar navbar-inverse navbar-fixed-bottom">
+		<h4>資料來源 : 
+			<a href="https://medium.com/jameslearningnote/%E8%B3%87%E6%96%99%E5%88%86%E6%9E%90-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%AC%AC2-3%E8%AC%9B-pandas-%E5%9F%BA%E6%9C%ACfunction%E4%BB%8B%E7%B4%B9-series-dataframe-selection-grouping-447a3fa90b60">資料分析&機器學習
+			</a>
+		</h4>
+	</nav>
+</footer>
+</html>
